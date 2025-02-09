@@ -1,0 +1,52 @@
+
+.min-h-screen {
+    min-height: 100vh;
+}
+
+.bg-dark {
+    background-color: #121212;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.section-padding {
+    padding: 20px;
+}
+
+.card-padding {
+    padding: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-button {
+    margin: 5px;
+}
+
+.dashboard-button.active {
+    background-color: #2563eb;
+    border-color: #2563eb;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chart-container {
+    height: 300px;
+}
+
+.nested-card {
+    margin-bottom: 15px;
+}

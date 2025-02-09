@@ -1,0 +1,36 @@
+body {
+    background-color: #f8f9fa; /* Light background */
+    color: #333; /* Neutral text color */
+    font-family: "Roboto", sans-serif;
+}
+
+.card {
+    background-color: #ffffff !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+    transition: transform 0.3s, box-shadow 0.3s !important;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    color: #212529;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.button {
+    border-radius: 8px;
+}

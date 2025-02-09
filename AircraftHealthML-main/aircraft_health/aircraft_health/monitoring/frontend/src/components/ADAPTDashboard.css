@@ -1,0 +1,103 @@
+.card-row {
+  display: flex;
+  align-items: stretch; /* Match heights of all cards in the row */
+  gap: 15px; /* Add spacing between cards */
+}
+
+.card-item {
+  flex: 1; /* Ensure cards share equal width */
+  min-height: 150px; /* Set a minimum height */
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Adds space between buttons */
+  justify-content: center; /* Center align buttons */
+  margin-top: 8px; /* Add margin to separate from the card above */
+}
+
+.dashboard-button {
+  padding: 8px 16px; /* Updated padding for improved button UI */
+  background-color: #4a5568; /* Match card gradient */
+  color: white;
+  border: none;
+  border-radius: 4px; /* Updated border radius */
+  font-weight: bold; /* Updated font weight */
+  font-size: 11px; /* Smaller font size */
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Updated transition */
+  margin: 4px; /* Added margin for consistent spacing */
+  white-space: nowrap;
+}
+
+.dashboard-button:hover {
+  background-color: #2d3748; /* Reverse gradient */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Updated box-shadow */
+  transform: scale(1.05); /* Slight enlargement */
+}
+
+.dashboard-button.active {
+  background-color: #2d3748;
+  color: #ffeb3b;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  .button-container {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 6px; /* Smaller spacing for mobile */
+  }
+
+  .dashboard-button {
+    width: 100%; /* Full width on smaller screens */
+    padding: 5px 8px;
+    font-size: 10px;
+  }
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Spacing between cards */
+}
+
+.card-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-full-height {
+  height: 100%;
+  min-height: 100%;
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column; /* Stack cards vertically */
+  }
+}
+
+.section-padding {
+    margin-top: 20px; /* Adds space above the section */
+    margin-bottom: 20px; /* Adds space below the section */
+}
+
+.card-padding {
+    padding: 20px; /* Adds internal padding for card content */
+    background: linear-gradient(to right, #1a2f6a, #2050c0); /* Made a shade or two darker */
+    color: white;
+    border-radius: 8px;
+}
+
+.nested-card {
+    background: #1a202c; /* Ensure individual cards remain darker */
+    color: white; /* Ensure white text on dark background */
+    border: none;
+    border-radius: 8px;
+}
+
+.shadow-lg {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
